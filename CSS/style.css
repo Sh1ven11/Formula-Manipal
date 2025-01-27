@@ -68,9 +68,15 @@ body{
     --secondary-color: rgb(0, 0, 0); /* Transparent blue */
     --background-color: rgb(255, 255, 255); /* Light gray */
 }
+.homepage *{
+object-fit: contain;
+width: 100%;
+}
 .homepage{
-    height:max-content;
-   
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: white;
 }
 .aboutus{
     height: 100px;
