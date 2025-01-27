@@ -50,10 +50,10 @@ color:var(--background-color);
     font-style: normal;  /* Specify font style */
 }
 @font-face {
-    font-family: 'Helvetica'; /* Give your font a name */
+    font-family: 'Helvetica',sans-serif; /* Give your font a name */
     src:   /* Fallback format */
          url('/Assets/helvetica/ElliotSans-Light.ttf') format('truetype'); /* Additional fallback */
-    font-weight: 10; /* Specify font weight */
+    font-weight: 200; /* Specify font weight */
     font-style: normal;  /* Specify font style */
 }
 
