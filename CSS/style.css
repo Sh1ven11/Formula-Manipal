@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Helvetica';
+
   }
 .nav-bar{
     display:flex;
@@ -22,10 +24,13 @@ html {
 #space{
     min-width: 5%;
 }
-
+.homepage{
+    display: flex;
+}
 .nav-bar a{
 text-decoration: none;
-color: white;
+color:var(--background-color);
+
 
 }
 @media(max-width:750px){
@@ -36,4 +41,31 @@ color: white;
     .nav-bar a{
         display: none;
     }
+}
+@font-face {
+    font-family: 'Korataki'; /* Give your font a name */
+    src:   /* Fallback format */
+         url('/Assets/font1.otf') format('truetype'); /* Additional fallback */
+    font-weight: 10; /* Specify font weight */
+    font-style: normal;  /* Specify font style */
+}
+@font-face {
+    font-family: 'Helvetica'; /* Give your font a name */
+    src:   /* Fallback format */
+         url('/Assets/helvetica/ElliotSans-Light.ttf') format('truetype'); /* Additional fallback */
+    font-weight: 10; /* Specify font weight */
+    font-style: normal;  /* Specify font style */
+}
+
+@font-face {
+    font-family: 'Helvetica-italic'; /* Give your font a name */
+    src:   /* Fallback format */
+         url('/Assets/helvetica/ElliotSans-LightItalic.ttf') format('truetype'); /* Additional fallback */
+    font-weight: 10; /* Specify font weight */
+    font-style: italic;  /* Specify font style */
+}
+:root {
+    --primary-color: rgb(200, 42, 30); 
+    --secondary-color: rgb(0, 0, 0); /* Transparent blue */
+    --background-color: rgb(255, 255, 255); /* Light gray */
 }
