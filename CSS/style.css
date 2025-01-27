@@ -1,47 +1,46 @@
 html {
     scroll-behavior: smooth;
-    font-family: 'Helvetica';
-
+    font-family: 'Helvetica-italic';
+   background-color: var(--secondary-color);
   }
+div{
+    background-color: var(--secondary-color);
+}
+body{
+    background-color: var(--secondary-color);
+}
+.menu>*{
+ color: white;
+ text-decoration: none;
+ font-family: 'Helvetica-italic';
+ font-weight:lighter;
+ font-size:large;
+
+}
 .nav-bar{
-    display:flex;
-    flex-wrap: wrap;
-    position:fixed;
-    justify-content:space-between;
-    top:0px;left: 0px;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    }
-
-#nav-logo{
-    height: 75px;
-    margin-right:50px;
-}
-#contact{
-    margin-right: 100px;
-}
-#space{
-    min-width: 5%;
-}
-.homepage{
+    background-color:var(--secondary-color);
+    margin: 0;
+    padding: 0;
     display: flex;
+    width: 100%;
+    height: 75px;
+    gap: 15%;
 }
-.nav-bar a{
-text-decoration: none;
-color:var(--background-color);
 
+.logo{
+    align-self: center;
 
 }
-@media(max-width:750px){
-    .logo{
-        margin-left: 25%;
-        margin-right: 50%;
-    }
-    .nav-bar a{
-        display: none;
-    }
+.menu{
+    display: flex;
+    align-self: center;
+    gap: 10%;
+    width:75%;
 }
+.gap{
+    width: 10%;
+}
+
 @font-face {
     font-family: 'Korataki'; /* Give your font a name */
     src:   /* Fallback format */
@@ -53,7 +52,7 @@ color:var(--background-color);
     font-family: 'Helvetica',sans-serif; /* Give your font a name */
     src:   /* Fallback format */
          url('/Assets/helvetica/ElliotSans-Light.ttf') format('truetype'); /* Additional fallback */
-    font-weight: 200; /* Specify font weight */
+    font-weight: 100; /* Specify font weight */
     font-style: normal;  /* Specify font style */
 }
 
@@ -68,4 +67,11 @@ color:var(--background-color);
     --primary-color: rgb(200, 42, 30); 
     --secondary-color: rgb(0, 0, 0); /* Transparent blue */
     --background-color: rgb(255, 255, 255); /* Light gray */
+}
+.homepage{
+    height:max-content;
+   
+}
+.aboutus{
+    height: 100px;
 }
