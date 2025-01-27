@@ -78,6 +78,13 @@ width: 100%;
     width: 100%;
     background-color: white;
 }
+.front-logo{
+    position: absolute;
+    right: 10%;
+    top:5%;
+    width: 13%;
+    background-color: rgba(0, 0, 0, 0);
+}
 .aboutus{
     height: 100px;
 }
