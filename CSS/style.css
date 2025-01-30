@@ -108,6 +108,9 @@ body{
     font-size: 10px;
 }
     
+h3{
+    z-index: 3;
+}
 
 @media screen and (max-width:1000px){
     .nav-bar{
