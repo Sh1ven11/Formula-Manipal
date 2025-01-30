@@ -75,6 +75,7 @@ body{
 .homepage{
     width: 100vw; /* Full width */
     height: 100vh; /* Full height */
+    padding-top: height: 75px;
     overflow: hidden; 
 }
 .backg{
@@ -95,7 +96,7 @@ body{
     }
     
     .backg{
-        object-position: center;
+        object-position: left 1%;
     }
     
 }
