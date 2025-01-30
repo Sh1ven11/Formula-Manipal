@@ -48,7 +48,7 @@ body{
 @font-face {
     font-family: 'Korataki'; /* Give your font a name */
     src:   /* Fallback format */
-         url('/Assets/font1.otf') format('truetype'); /* Additional fallback */
+         url('/Assets/font1.ttf') format('truetype'); /* Additional fallback */
     font-weight: 10; /* Specify font weight */
     font-style: normal;  /* Specify font style */
 }
