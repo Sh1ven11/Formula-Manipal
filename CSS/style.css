@@ -95,11 +95,12 @@ body{
     left: 0;
     width: 100%;
     margin-top:75px ;
-    height: 87.5%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     z-index: 1; /* Ensure overlay is above the image */
 }
 .ABOUTUS{
+    z-index: 3;
     display: flex;
     justify-content: center;
     color: var(--background-color);
