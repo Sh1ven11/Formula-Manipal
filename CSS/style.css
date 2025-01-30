@@ -95,7 +95,7 @@ width: 100%;
     color:var(--primary-color);
     background-color: rgba(0, 0, 0, 0);
     font-size: 5rem;
-    font-family:'Korataki';
+    font-family:'Korataki',sans-serif;
         }
 #two{
     color: black;
