@@ -84,7 +84,6 @@ body{
     object-fit: cover;
 }
 
- 
 
 
 .aboutus{
@@ -98,7 +97,18 @@ body{
         height: 100vh;
     }
     .backg{
-        object-position: left 1%;
+        object-fit: cover; 
+       
+
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        z-index: 1; /* Ensure overlay is above the image */
     }
     
 }
