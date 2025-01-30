@@ -81,20 +81,31 @@ width: 100%;
     background-color: white;
 }
 .front-logo-text{
-    display: flex;
-    flex-wrap: wrap;
-    gap:2%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto ;
     position:absolute;
-    background-color: rgba(0, 0, 0, 0);
-    left: 50%;
-    top:10%
+    background-color: rgba(0, 100, 0, 1);
+    left: 40%;
+    right: 5%;
+    top:10%;
+    padding: 0%;
+    margin: 0%;
+
 }
 .front-logo{
-    width: 10%;
-    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    height:100%;
+    width: 100%;
+    
+    margin: 0%;
+    background-color: rgba(0, 0, 0,1);
+}
+#logophoto{
+    position: relative;
+    
 }
 .front-text{
-    width: min-content;
     color:var(--primary-color);
     background-color: rgba(0, 0, 0, 0);
     font-size: 5rem;
@@ -112,5 +123,9 @@ h3{
 @media screen and (max-width:1000px){
     .nav-bar{
         display: none;
+    }
+    .homepage{
+     max-width: 100%;
+    object-fit: cover;
     }
 }
