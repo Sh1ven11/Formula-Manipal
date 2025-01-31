@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
-    font-family: 'Korataki';
-   background-color: var(--secondary-color);
+    font-family: 'lulo';
+   background-color:var(--primary-color);
   }
 div{
     background-color: var(--secondary-color);
@@ -9,12 +9,12 @@ div{
 body{
     overflow-x: hidden; 
 
-    background-color: var(--secondary-color);
 }
+
 .menu>*{
  color: white;
  text-decoration: none;
- font-family: 'Helvetica-italic';
+ font-family:'text';
  font-weight:lighter;
  font-size:large;
 
@@ -44,31 +44,27 @@ body{
 }
 
 @font-face {
-    font-family: 'Korataki'; /* Give your font a name */
+    font-family: 'lulo'; /* Give your font a name */
     src:   /* Fallback format */
-         url('/Assets/font1.ttf') format('truetype'); /* Additional fallback */
+         url('/Assets/fonnts.com-Lulo_Clean_W01_One_Bold.ttf') format('truetype'); /* Additional fallback */
     font-weight: 10; /* Specify font weight */
     font-style: normal;  /* Specify font style */
 }
 @font-face {
-    font-family: 'Helvetica',sans-serif; /* Give your font a name */
+    font-family: 'text',sans-serif; /* Give your font a name */
     src:   /* Fallback format */
-         url('/Assets/helvetica/ElliotSans-Light.ttf') format('truetype'); /* Additional fallback */
-    font-weight: 100; /* Specify font weight */
-    font-style: normal;  /* Specify font style */
+         url('/Assets/Avenir\ LT\ 35\ Light\ Regular.ttf') format('truetype'); /* Additional fallback */
+    font-weight: 10;
+
+    /* Specify font weight */
+    font-style:normal;  /* Specify font style */
 }
 
-@font-face {
-    font-family: 'Helvetica-italic'; /* Give your font a name */
-    src:   /* Fallback format */
-         url('/Assets/helvetica/ElliotSans-LightItalic.ttf') format('truetype'); /* Additional fallback */
-    font-weight: 10; /* Specify font weight */
-    font-style: italic;  /* Specify font style */
-}
+
 :root {
     --primary-color: rgb(200, 42, 30); 
     --secondary-color: rgb(0, 0, 0); /* Transparent blue */
-    --background-color: rgb(255, 255, 255); /* Light gray */
+    --background-color: #E5E4E2; /* Light gray */
 }
 .homepage{
 
@@ -85,35 +81,46 @@ body{
 
 
 
-.aboutus{
-    height: 100px;
-}
+
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     margin-top:75px ;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    height: calc(100vh - 75px);
+    background-color: rgba(0, 0, 0, .5); /* Semi-transparent black */
     z-index: 1; /* Ensure overlay is above the image */
+}
+.ABOUTUS{
+    position: relative;
+    padding-top: 5%;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding-left: 50%;
+    
 }
 
     
-.About-text{
-    padding-top: 100px;
-    display: block;
+.about-head{
+
+    
+    display: flex;
+    justify-content: center;
     z-index: 3;
-   color: var(--primary-color);
-   font-family:'Korataki';
-   
+   color: var(--background-color);
+   font-family:'lulo';
+  
 
 }
-#about-text{
-    color: var(--background-color);
+
+.about-text{
+    color: var(--secondary-color);
     width: 50vw;
-    font-family: 'Helvetica-italic';
+    font-family: 'text';
 }
+
 @media screen and (max-width:1000px){
     .nav-bar{
         display: none;
@@ -144,7 +151,12 @@ body{
        
         height: 20vh;
     }
-   
-
+   .ABOUTUS{
+    padding-left: 0%;
+   }
+.about-text{
+    width: 100%;
+    padding: 0 10%;
+}
     
 }
