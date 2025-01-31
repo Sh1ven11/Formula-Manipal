@@ -46,14 +46,14 @@ body{
 @font-face {
     font-family: 'lulo'; /* Give your font a name */
     src:   /* Fallback format */
-         url('/Assets/fonnts.com-Lulo_Clean_W01_One_Bold.ttf') format('truetype'); /* Additional fallback */
+         url('Assets/fonnts.com-Lulo_Clean_W01_One_Bold.ttf') format('truetype'); /* Additional fallback */
     font-weight: 10; /* Specify font weight */
     font-style: normal;  /* Specify font style */
 }
 @font-face {
     font-family: 'text',sans-serif; /* Give your font a name */
     src:   /* Fallback format */
-         url('/Assets/Avenir\ LT\ 35\ Light\ Regular.ttf') format('truetype'); /* Additional fallback */
+         url('Assets/Avenir\ LT\ 35\ Light\ Regular.ttf') format('truetype'); /* Additional fallback */
     font-weight: 10;
 
     /* Specify font weight */
