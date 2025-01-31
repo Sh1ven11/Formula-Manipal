@@ -28,9 +28,7 @@ body{
     height: 75px;
     gap: 15%;
 }
-.homepage{
-    background-color: var(--secondary-color);
-}
+
 .logo{
     align-self: center;
 
@@ -73,6 +71,7 @@ body{
     --background-color: rgb(255, 255, 255); /* Light gray */
 }
 .homepage{
+
     width: 100vw; /* Full width */
     height: calc(100vh - 75px);/* Full height */
   
@@ -99,18 +98,22 @@ body{
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     z-index: 1; /* Ensure overlay is above the image */
 }
-.ABOUTUS{
-    display: flex;
-    justify-content: center;
-    color: var(--background-color);
-    font-family: 'Korataki';
-    font-size: 10px;
-}
-    
-h3{
-    z-index: 3;
-}
 
+    
+.About-text{
+    padding-top: 100px;
+    display: block;
+    z-index: 3;
+   color: var(--primary-color);
+   font-family:'Korataki';
+   
+
+}
+#about-text{
+    color: var(--background-color);
+    width: 50vw;
+    font-family: 'Helvetica-italic';
+}
 @media screen and (max-width:1000px){
     .nav-bar{
         display: none;
