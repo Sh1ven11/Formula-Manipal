@@ -110,7 +110,7 @@ body{
     justify-content: center;
     z-index: 3;
    color: var(--background-color);
-   font-family:'lulo';
+   font-family:'lulo',sans-serif !important;
   
 
 }
@@ -118,7 +118,7 @@ body{
 .about-text{
     color: var(--secondary-color);
     width: 50vw;
-    font-family: 'text';
+    font-family: 'text' ,sans-serif !important;
 }
 
 @media screen and (max-width:1000px){
