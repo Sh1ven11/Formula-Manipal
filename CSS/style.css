@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     font-family: 'lulo';
-   background-color:var(--primary-color);
+   background-color:var(--background-color);
   }
 div{
     background-color: var(--secondary-color);
@@ -43,13 +43,24 @@ body{
     width: 10%;
 }
 
-@font-face {
-    font-family: 'lulo'; /* Give your font a name */
-    src:   /* Fallback format */
-         url('/Assets/head.ttf') format('truetype'); /* Additional fallback */
-    font-weight: 10; /* Specify font weight */
-    font-style: normal;  /* Specify font style */
-}
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
 @font-face {
     font-family: 'text',sans-serif; /* Give your font a name */
     src:   /* Fallback format */
@@ -97,7 +108,7 @@ body{
     position: relative;
     padding-top: 5%;
     height: 100px;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     padding-left: 50%;
     
 }
@@ -109,18 +120,27 @@ body{
     display: flex;
     justify-content: center;
     z-index: 3;
-   color: var(--background-color);
-   font-family:'lulo',sans-serif !important;
-  
+   color: var(--secondary-color);
+   font-family:'Oswald',sans-serif !important;
+   font-weight: 700;  
 
 }
 
 .about-text{
     color: var(--secondary-color);
-    width: 50vw;
+    width: 75vh;
     font-family: 'text' ,sans-serif !important;
 }
-
+.about-pic>*{
+    position: absolute;
+    left: 10px;top: 100px;
+    height: 25vw;
+}
+.about-pic{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width:1000px){
     .nav-bar{
         display: none;
@@ -157,6 +177,14 @@ body{
 .about-text{
     width: 100%;
     padding: 0 10%;
+}
+.about-pic>*{
+    position:relative;
+    height:50vh;
+    width: 85vw;
+    
+
+    
 }
     
 }
