@@ -12,7 +12,7 @@ body{
 }
 
 .menu>*{
- color: white;
+ color:var(--text-color);
  text-decoration: none;
  font-family:'text';
  font-weight:lighter;
@@ -43,39 +43,14 @@ body{
     width: 10%;
 }
 
-.libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-@font-face {
-    font-family: 'text',sans-serif; /* Give your font a name */
-    src:   /* Fallback format */
-         url('/Assets/text.ttf') format('truetype'); /* Additional fallback */
-    font-weight: 10;
 
-    /* Specify font weight */
-    font-style:normal;  /* Specify font style */
-}
 
 
 :root {
     --primary-color: rgb(200, 42, 30); 
     --secondary-color: rgb(0, 0, 0); /* Transparent blue */
-    --background-color: #E5E4E2; /* Light gray */
+    --text-color: #E5E4E2; /* Light gray */
+    --background-color:white;
 }
 .homepage{
 
@@ -121,7 +96,7 @@ body{
     justify-content: center;
     z-index: 3;
    color: var(--secondary-color);
-   font-family:'Oswald',sans-serif !important;
+   font-family:"Oswald",sans-serif !important;
    font-weight: 700;  
 
 }
@@ -129,7 +104,9 @@ body{
 .about-text{
     color: var(--secondary-color);
     width: 75vh;
-    font-family: 'text' ,sans-serif !important;
+    font-family: 'Poppins' ,sans-serif !important;
+    font-weight: 300;
+    font-style: normal;
 }
 .about-pic>*{
     position: absolute;
