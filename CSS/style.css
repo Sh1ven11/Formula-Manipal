@@ -84,7 +84,7 @@ body{
 .about-pic{
    padding: 3vh;
     background: transparent;
-    width: 50%;
+    width: 50vw;
 }
 .carousel{
     background:transparent;    
@@ -148,7 +148,7 @@ body{
         display: flex;
         justify-content: center;
         width: 90%;
-        padding-left: 5%;
+       
     }
     .about-text{
         position:relative;
