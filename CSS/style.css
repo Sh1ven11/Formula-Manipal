@@ -64,8 +64,38 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.ABOUTUS{
+    background-color: var(--background-color);
+    
+}
+.about-head{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.about-below{
+    background:transparent;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap: 1rem;
+}
 
-
+.about-pic{
+   padding: 3vh;
+    background: transparent;
+    width: 50%;
+}
+.carousel{
+    background:transparent;    
+}
+.carousel-inner{
+    border-radius: 2%;
+}
+.about-text{
+    width: 50%;
+    background:transparent;
+}
 
 
 
@@ -79,45 +109,7 @@ body{
     background-color: rgba(0, 0, 0, .5); /* Semi-transparent black */
     z-index: 1; /* Ensure overlay is above the image */
 }
-.ABOUTUS{
-    position: relative;
-    padding-top: 5%;
-    height: 100px;
-    background-color: var(--background-color);
-    padding-left: 50%;
-    
-}
 
-    
-.about-head{
-
-    
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-   color: var(--secondary-color);
-   font-family:"Oswald",sans-serif !important;
-   font-weight: 700;  
-
-}
-
-.about-text{
-    color: var(--secondary-color);
-    width: 75vh;
-    font-family: 'Poppins' ,sans-serif !important;
-    font-weight: 300;
-    font-style: normal;
-}
-.about-pic>*{
-    position: absolute;
-    left: 10px;top: 100px;
-    height: 25vw;
-}
-.about-pic{
-    background: transparent;
-    display: flex;
-    justify-content: center;
-}
 @media screen and (max-width:1000px){
     .nav-bar{
         display: none;
@@ -148,20 +140,23 @@ body{
        
         height: 15vh;
     }
-   .ABOUTUS{
-    padding-left: 0%;
-   }
-.about-text{
-    width: 100%;
-    padding: 0 10%;
-}
-.about-pic>*{
-    position:relative;
-    height:50vh;
-    width: 85vw;
-    
+    .about-below{
+        display: grid;
+    }
+    .about-pic{
+        position:relative;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding-left: 5%;
+    }
+    .about-text{
+        position:relative;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding-left: 5%;
+    }
 
-    
-}
     
 }
