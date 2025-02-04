@@ -82,15 +82,13 @@ body{
     gap: 1rem;
 }
 .about-head{
-    visibility: hidden;
-}
-.about-head2{
     display: flex;
     justify-content: center;
+    padding: 2% 0 0 0;
 }
+
 .about-pic{
-    padding: 20px;
-    padding-top:70px;
+    
     background: transparent;
     width: 60vw;
 
@@ -102,7 +100,7 @@ body{
     border-radius: 2%;
 }
 .about-text{
-    padding-right: 3vw;
+    
     width: 40vw;
     text-decoration: none;
     background: transparent;
@@ -156,11 +154,7 @@ body{
     .about-below{
         display: grid;
     }
-    .about-head{
-        display: flex;
-        justify-content: center ;
-        align-items: center;
-    }
+    
     
     .about-pic{
         position:relative;
@@ -170,9 +164,7 @@ body{
         padding: 0% 5%;
        
     }
-    .about-head2{
-        display: none;
-    }
+    
     .about-text{
         position:relative;
         display: flex;
