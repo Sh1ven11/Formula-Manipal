@@ -105,10 +105,9 @@ body{
     padding-right: 3vw;
     width: 40vw;
     text-decoration: none;
-
-    font-weight:lighter;
-    font-size:large;
-    background:transparent;
+    background: transparent;
+    font-family: "Poppins";
+    font-weight: 300;
 }
 
 
