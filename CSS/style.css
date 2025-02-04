@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     text-decoration: none;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-weight:lighter;
     font-size:large;
    background-color:var(--background-color);
@@ -15,11 +15,11 @@ body{
 }
 
 .menu>*{
- color:var(--text-color);
- text-decoration: none;
-
- font-weight:lighter;
- font-size:large;
+    color:var(--text-color);
+    text-decoration: none;
+   
+    font-weight:lighter;
+    font-size:large;
 
 }
 .nav-bar{
