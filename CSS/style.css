@@ -65,6 +65,7 @@ body{
     object-fit: cover;
 }
 .ABOUTUS{
+    width: 100%;
     background-color: var(--background-color);
     
 }
@@ -74,6 +75,7 @@ body{
     align-items: center;
 }
 .about-below{
+    width: 100%;
     background:transparent;
     display: flex;
     justify-content:center;
@@ -148,6 +150,7 @@ body{
         display: flex;
         justify-content: center;
         width: 90%;
+        
        
     }
     .about-text{
