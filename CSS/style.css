@@ -78,7 +78,7 @@ body{
     background:transparent;
     display: flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     gap: 1rem;
 }
 .about-head{
@@ -88,7 +88,7 @@ body{
 }
 
 .about-pic{
-    
+    padding: 1.5vw .5vw 1.5vw 1.5vw;
     background: transparent;
     width: 60vw;
 
@@ -100,7 +100,7 @@ body{
     border-radius: 2%;
 }
 .about-text{
-    
+    padding: 1.5vw 1.5vw 1.5vw .5vw;
     width: 40vw;
     text-decoration: none;
     background: transparent;
