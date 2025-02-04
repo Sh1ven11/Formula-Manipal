@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
-    font-family: 'lulo';
+    text-decoration: none;
+
+    font-weight:lighter;
+    font-size:large;
    background-color:var(--background-color);
   }
 div{
@@ -14,7 +17,7 @@ body{
 .menu>*{
  color:var(--text-color);
  text-decoration: none;
- font-family:'text';
+
  font-weight:lighter;
  font-size:large;
 
@@ -101,6 +104,10 @@ body{
 .about-text{
     padding-right: 3vw;
     width: 40vw;
+    text-decoration: none;
+
+    font-weight:lighter;
+    font-size:large;
     background:transparent;
 }
 
