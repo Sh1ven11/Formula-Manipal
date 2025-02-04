@@ -86,9 +86,11 @@ body{
     justify-content: center;
 }
 .about-pic{
-   padding: 3vh;
+    padding: 20px;
+    padding-top:70px;
     background: transparent;
-    width: 50vw;
+    width: 60vw;
+
 }
 .carousel{
     background:transparent;    
@@ -97,7 +99,8 @@ body{
     border-radius: 2%;
 }
 .about-text{
-    width: 50%;
+    padding-right: 3vw;
+    width: 40vw;
     background:transparent;
 }
 
