@@ -69,11 +69,7 @@ body{
     background-color: var(--background-color);
     
 }
-.about-head{
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-}
+
 .about-below{
     width: 100%;
     background:transparent;
@@ -82,7 +78,13 @@ body{
     align-items:flex-start;
     gap: 1rem;
 }
-
+.about-head{
+    visibility: hidden;
+}
+.about-head2{
+    display: flex;
+    justify-content: center;
+}
 .about-pic{
    padding: 3vh;
     background: transparent;
@@ -145,6 +147,12 @@ body{
     .about-below{
         display: grid;
     }
+    .about-head{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+    
     .about-pic{
         position:relative;
         display: flex;
@@ -153,7 +161,9 @@ body{
         padding: 0% 5%;
        
     }
-
+    .about-head2{
+        display: none;
+    }
     .about-text{
         position:relative;
         display: flex;
