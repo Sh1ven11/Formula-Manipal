@@ -33,10 +33,7 @@ body{
     gap: 15%;
 }
 
-.logo{
-    align-self: center;
 
-}
 .menu1{
     display: flex;
     align-self: center;
@@ -127,9 +124,10 @@ body{
 
 
 @media screen and (max-width:1000px){
+    
     .menu {
         position: fixed;
-        top:2%;right: 2%;
+        top:10px;right: 2%;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -193,14 +191,14 @@ body{
     .front-cont{
         position: absolute;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
         top: 10px;
         z-index: 2;
         background-color: rgba(0,0,0, 0);
     }
     .front-logo{
-       
+        
         height: 15vh;
     }
     .about-below{
