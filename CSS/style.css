@@ -128,8 +128,8 @@ body{
 
 @media screen and (max-width:1000px){
     .menu {
-        position: absolute;
-        top:2%;right: 5%;
+        position: fixed;
+        top:2%;right: 2%;
         background-color: transparent;
         border: none;
         cursor: pointer;
