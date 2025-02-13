@@ -61,7 +61,7 @@ body{
 
     width: 100vw; /* Full width */
     height: calc(100vh - 75px);/* Full height */
-  
+    
     overflow: hidden; 
 }
 .backg{
@@ -136,23 +136,25 @@ body{
 @media screen and (max-width:1000px){
     .sidebar{
         z-index: 3;
+        display:block;
         position:fixed;
         height: 100%;   
         width: 50%; 
-        right:-10%;
+        right:-50%;
         overflow-y: auto;
-        transition: transform 10.3s ease-in-out;
+        transition:.4s ease-in-out;
+        box-shadow: 4px 0px 15px rgba(0, 0, 0, 1); /* Deeper shadow */
 
+        background-color: var(--primary-color);
 
         overflow-x: hidden;
     }
     
    .open{
-    transform:translateX(-10%);
-    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.9); /* Deeper shadow */
+    transform:translateX(-80%);
 
-    background-color: var(--primary-color);
    }
+   
      
 
     .grid{

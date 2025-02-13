@@ -8,33 +8,24 @@ function updateMenuColor() {
     const homepageRect = homepage.getBoundingClientRect();
     const aboutUsRect = aboutUs.getBoundingClientRect();
     console.log(homepageRect.top +"bottom " +homepageRect.bottom)
-    if (homepageRect.top <= 0 && homepageRect.bottom >= 0) {
+    if (homepageRect.top <= 0 && homepageRect.bottom >= 0 && open%2==0) {
         menuIconLines.forEach(line => line.style.stroke = "white");  // White in Homepage
-    } else if (aboutUsRect.top <= 0 && aboutUsRect.bottom >= 0 && open==1) {
+    } else if (aboutUsRect.top <= 0 && aboutUsRect.bottom >= 0 ) {
         menuIconLines.forEach(line => line.style.stroke = "black");  // Black in ABOUT US
     }
 }
 document.querySelector(".menu").addEventListener("click",function(){
+    document.querySelector(".sidebar").classList.toggle("open")
     this.classList.toggle('opened');
+    open++;
+
     this.setAttribute('aria-expanded', this.classList.contains('opened'));
     var element=document.querySelector(".sidebar");
-  
-if (element.style.display === "block") {
-    element.style.display = "none";  
-    open=1;
-    document.querySelector(".sidebar").classList.remove("open")
-    updateMenuColor();
-} 
-else{
-    document.querySelector(".sidebar").classList.add("open")
-    open=0;
-    element.style.display = "block";   
 
     const menuIconLines = document.querySelectorAll(".menu .line");
     menuIconLines.forEach(line => line.style.stroke = "white");
 
 
-}
 
 })
 // Run function on scroll
