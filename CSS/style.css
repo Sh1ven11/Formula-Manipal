@@ -223,7 +223,7 @@ body{
     }
     .backg{
         object-fit: cover; 
-       
+        overflow: hidden;
 
     }
     .overlay{
