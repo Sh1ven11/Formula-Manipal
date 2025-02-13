@@ -17,12 +17,17 @@ document.querySelector(".menu").addEventListener("click",function(){
     this.classList.toggle('opened');
     this.setAttribute('aria-expanded', this.classList.contains('opened'));
     var element=document.querySelector(".sidebar");
-    
+  
 if (element.style.display === "block") {
-    element.style.display = "none";  // Show element
+    element.style.display = "none";  
+    document.querySelector(".sidebar").classList.remove("open")
+
 } 
 else{
-    element.style.display = "block";   // Hide element
+    document.querySelector(".sidebar").classList.add("open")
+
+    element.style.display = "block";   
+
     const menuIconLines = document.querySelectorAll(".menu .line");
     menuIconLines.forEach(line => line.style.stroke = "white");
 

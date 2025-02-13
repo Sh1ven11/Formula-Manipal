@@ -131,10 +131,24 @@ body{
         background-color: rgba(0, 0, 0, .75);
         z-index: 3;
         position:fixed;
-        right: 0;
         height: 100%;   
-        width: 40%; 
+        width: 50%; 
+        right:-10%;
+        overflow-y: auto;
+        transition: transform 10.3s ease-in-out;
+
+
+        overflow-x: hidden;
     }
+    
+   .open{
+    transform:translateX(-10%);
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.9); /* Deeper shadow */
+
+    background-color: var(--primary-color);
+   }
+     
+
     .grid{
 
         display: grid;
