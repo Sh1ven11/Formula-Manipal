@@ -13,7 +13,10 @@ function updateMenuColor() {
         menuIconLines.forEach(line => line.style.stroke = "black");  // Black in ABOUT US
     }
 }
-
+$(".menu").click(function(){
+    console.log("Getting pressed")
+    $(".sidebar").toggle();
+});
 // Run function on scroll
 window.addEventListener("scroll", updateMenuColor);
 

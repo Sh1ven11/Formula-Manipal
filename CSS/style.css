@@ -6,15 +6,18 @@ html {
     font-size:large;
    background-color:var(--secondary-color);
   }
-
-div{
-    background-color: var(--secondary-color);
+.flex{
+    display:flex;
+    justify-content: center;
 }
+
 body{
     overflow-x: hidden; 
 
 }
-
+.sidebar{
+    display: none;    
+}
 .menu1>*{
     color:var(--text-color);
     text-decoration: none;
@@ -124,7 +127,20 @@ body{
 
 
 @media screen and (max-width:1000px){
-    
+    .sidebar{
+        display: block;
+        z-index: 3;
+        background-color: white;
+        position:fixed;
+        right: 0;
+        height: 100%;   
+        width: 50%; 
+    }
+    .grid{
+        display: grid;
+        padding-top: 20px;
+        gap:20px;
+    }
     .menu {
         position: fixed;
         top:10px;right: 1%;
