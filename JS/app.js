@@ -10,18 +10,18 @@ function updateMenuColor() {
     if (homepageRect.top <= 0 && homepageRect.bottom >= 50) {
         menuIconLines.forEach(line => line.style.stroke = "white");  // White in Homepage
     } else if (aboutUsRect.top <= 0 && aboutUsRect.bottom >= 0) {
-        menuIconLines.forEach(line => line.style.stroke = "black");  // Black in ABOUT US
+        menuIconLines.forEach(line => line.style.stroke = "red");  // Black in ABOUT US
     }
 }
 document.querySelector(".menu").addEventListener("click",function(){
-    //onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
     this.classList.toggle('opened');
     this.setAttribute('aria-expanded', this.classList.contains('opened'));
     var element=document.querySelector(".sidebar");
     
-if (element.style.display === "none") {
-    element.style.display = "block";  // Show element
-} else {
+if (element.style.display === "block") {
+    element.style.display = "none";  // Show element
+} 
+else{
     element.style.display = "none";   // Hide element
 }
 

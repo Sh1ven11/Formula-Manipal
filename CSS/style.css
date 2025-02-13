@@ -128,18 +128,20 @@ body{
 
 @media screen and (max-width:1000px){
     .sidebar{
-        background-color: black;
-        display: block;
+        background-color: rgba(0, 0, 0, .75);
         z-index: 3;
         position:fixed;
         right: 0;
         height: 100%;   
-        width: 50%; 
+        width: 40%; 
     }
     .grid{
+
         display: grid;
-        padding-top: 20px;
-        gap:20px;
+        color: white;
+        padding-top: 20%;
+        padding-left: 10%;
+        gap:10%;
     }
     .menu {
         position: fixed;
