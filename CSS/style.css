@@ -128,9 +128,9 @@ body{
 
 @media screen and (max-width:1000px){
     .sidebar{
+        background-color: black;
         display: block;
         z-index: 3;
-        background-color: white;
         position:fixed;
         right: 0;
         height: 100%;   

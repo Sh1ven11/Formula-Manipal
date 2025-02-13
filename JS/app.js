@@ -13,10 +13,19 @@ function updateMenuColor() {
         menuIconLines.forEach(line => line.style.stroke = "black");  // Black in ABOUT US
     }
 }
-$(".menu").click(function(){
-    console.log("Getting pressed")
-    $(".sidebar").toggle();
-});
+document.querySelector(".menu").addEventListener("click",function(){
+    //onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+    this.classList.toggle('opened');
+    this.setAttribute('aria-expanded', this.classList.contains('opened'));
+    var element=document.querySelector(".sidebar");
+    
+if (element.style.display === "none") {
+    element.style.display = "block";  // Show element
+} else {
+    element.style.display = "none";   // Hide element
+}
+
+})
 // Run function on scroll
 window.addEventListener("scroll", updateMenuColor);
 
