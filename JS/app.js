@@ -7,10 +7,10 @@ function updateMenuColor() {
     const homepageRect = homepage.getBoundingClientRect();
     const aboutUsRect = aboutUs.getBoundingClientRect();
     console.log(homepageRect.top +"bottom " +homepageRect.bottom)
-    if (homepageRect.top <= 0 && homepageRect.bottom >= 50) {
+    if (homepageRect.top <= 0 && homepageRect.bottom >= 0) {
         menuIconLines.forEach(line => line.style.stroke = "white");  // White in Homepage
     } else if (aboutUsRect.top <= 0 && aboutUsRect.bottom >= 0) {
-        menuIconLines.forEach(line => line.style.stroke = "red");  // Black in ABOUT US
+        menuIconLines.forEach(line => line.style.stroke = "black");  // Black in ABOUT US
     }
 }
 document.querySelector(".menu").addEventListener("click",function(){
@@ -22,7 +22,10 @@ if (element.style.display === "block") {
     element.style.display = "none";  // Show element
 } 
 else{
-    element.style.display = "none";   // Hide element
+    element.style.display = "block";   // Hide element
+    const menuIconLines = document.querySelectorAll(".menu .line");
+    menuIconLines.forEach(line => line.style.stroke = "white");
+
 }
 
 })
