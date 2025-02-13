@@ -13,12 +13,13 @@ html {
 
 body{
     overflow-x: hidden; 
-
 }
+
+
 .sidebar{
     display: none;    
 }
-.menu1>*{
+.menu1 >*{
     color:var(--text-color);
     text-decoration: none;
    
@@ -124,7 +125,13 @@ body{
 .menu{
     display: none;
 }
-
+.h{
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 250;
+    font-size: larger;
+    color:var(--background-color);
+}
 
 @media screen and (max-width:1000px){
     .sidebar{
@@ -154,7 +161,7 @@ body{
         color: white;
         padding-top: 20%;
         padding-left: 10%;
-        gap:10%;
+        gap:15%;
     }
     .menu {
         position: fixed;
