@@ -18,14 +18,12 @@ document.querySelector(".menu").addEventListener("click",function(){
     document.querySelector(".sidebar").classList.toggle("open")
     this.classList.toggle('opened');
     open++;
-
     this.setAttribute('aria-expanded', this.classList.contains('opened'));
     var element=document.querySelector(".sidebar");
 
     const menuIconLines = document.querySelectorAll(".menu .line");
     menuIconLines.forEach(line => line.style.stroke = "white");
-
-
+    if (open%2==0){updateMenuColor();}
 
 })
 // Run function on scroll
