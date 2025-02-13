@@ -7,10 +7,10 @@ function updateMenuColor() {
 
     const homepageRect = homepage.getBoundingClientRect();
     const aboutUsRect = aboutUs.getBoundingClientRect();
-    console.log(homepageRect.top +"bottom " +homepageRect.bottom)
-    if (homepageRect.top <= 0 && homepageRect.bottom >= 0 && open%2==0) {
+    console.log(homepageRect.top +"bottom " +homepageRect.bottom +" about su"+aboutUsRect.top+"bottom "+aboutUsRect.bottom)
+    if (homepageRect.top <= 0 && homepageRect.bottom >= 40 && open%2==0) {
         menuIconLines.forEach(line => line.style.stroke = "white");  // White in Homepage
-    } else if (aboutUsRect.top <= 0 && aboutUsRect.bottom >= 0 ) {
+    } else if (aboutUsRect.top <= 40 && aboutUsRect.bottom >= 0 ) {
         menuIconLines.forEach(line => line.style.stroke = "black");  // Black in ABOUT US
     }
 }

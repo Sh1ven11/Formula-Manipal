@@ -254,6 +254,8 @@ body{
     .about-below{
         display: grid;
         width: 100%;
+        margin:3% 0;
+       
     }
     
     
