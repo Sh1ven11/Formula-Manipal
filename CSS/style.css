@@ -27,7 +27,11 @@ body{
     font-size:large;
 
 }
+#Home{
+    z-index: 3;
+}
 .nav-bar{
+    position: fixed;
     background-color:var(--secondary-color);
     margin: 0;
     padding: 0;
@@ -35,6 +39,8 @@ body{
     width: 100%;
     height: 75px;
     gap: 15%;
+    z-index: 3;
+   
 }
 
 
@@ -60,14 +66,16 @@ body{
 .homepage{
 
     width: 100vw; /* Full width */
-    height: calc(100vh - 75px);/* Full height */
+    height: 100vh;/* Full height */
     
     overflow: hidden; 
+
 }
 .backg{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden; 
 }
 .ABOUTUS{
     width: 100%;
@@ -117,8 +125,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    margin-top:75px ;
-    height: calc(100vh - 75px);
+    height: 100vh;
     background-color: rgba(0, 0, 0, .5); /* Semi-transparent black */
     z-index: 1; /* Ensure overlay is above the image */
 }
