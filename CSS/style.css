@@ -11,6 +11,7 @@ html {
     justify-content: center;
 }
 
+
 body{
     overflow-x: hidden; 
 }
@@ -139,7 +140,28 @@ body{
     font-size: larger;
     color:var(--background-color);
 }
+.wtext{
+    padding-top: 10px;
+    color: #E5E4E2;
+    font-family: "Poppins";
+}
+.wrapper{
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden;
+}
+.wrapper>*{
+    display: inline-block;
 
+}
+.Sponsors img{
+    height: 50px;
+}
+.Sponsors{
+    
+    height:150px;
+    background-color: var(--primary-color);
+    margin-bottom: 100px;
+}
 @media screen and (max-width:1000px){
     .sidebar{
         z-index: 3;
@@ -234,8 +256,7 @@ body{
 
     }
     .overlay{
-        height: 100%;
-        margin-top:0px;
+       display:hidden;
 
     }
     .front-cont{
