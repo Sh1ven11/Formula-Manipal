@@ -224,6 +224,10 @@ max-width: 200px;
 
 
 @media screen and (max-width:1000px){
+
+    .item *{
+        max-height: 70px;
+        }
     .sidebar{
         z-index: 3;
         display:block;
