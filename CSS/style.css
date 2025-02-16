@@ -227,6 +227,7 @@ max-width: 200px;
 
     .item *{
         max-height: 70px;
+        max-width: 150px;
         }
     .sidebar{
         z-index: 3;
