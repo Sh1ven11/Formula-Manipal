@@ -323,7 +323,9 @@ body{
     
 }
 @media screen and (max-width:500px){
-   
+   .item{
+    padding: 0 100px;
+   }
     .wrapper{
         display: flex;
         flex-wrap: wrap;
