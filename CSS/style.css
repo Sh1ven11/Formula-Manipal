@@ -145,7 +145,6 @@ body{
     padding-top: 10px;
     color: #E5E4E2;
     font-family: "Poppins";
-    margin-bottom: 50px;;
 }
 
 
@@ -155,12 +154,15 @@ body{
     background-color: var(--secondary-color);
     margin-bottom: 100px;
 }
+
 .wrapper{
+    
     overflow: hidden;
     justify-content: center;
     padding: 4% 1%;
     display: grid;
     margin: 10px 2%;
+    margin-left: 8%;
     gap: 30px;
     grid-template-columns:1fr 1fr 1fr ;
     
@@ -169,8 +171,8 @@ body{
 }
 
 .item img{
-    max-height: 100px;
-    max-width: 300px;
+    height: 100px;
+    width: 300px;
     object-fit: contain; /* Ensures the logo fits within the box */
 
 }
